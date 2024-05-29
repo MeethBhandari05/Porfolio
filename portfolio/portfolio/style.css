@@ -1,0 +1,300 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins",sans-serif;
+}
+:root {
+  --color1: #7469b6;
+  --color2: #ad88c6;
+  --color3: #e1afd1;
+  --color4: #ffe6e6;
+  --color5: #ffffff;
+}
+html {
+  scroll-behavior: smooth;
+}
+.navbar {
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+  background-color: var(--color1);
+}
+.navbar .logo span {
+  color: var(--color3);
+}
+.navbar .nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  height: 70px;
+}
+.navbar .nav-links a {
+  color: black;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.4s transform ease-in-out;
+}
+.navbar .nav-links a:hover {
+  color: var(--color3);
+  transform: scale(1.1);
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.hero .heroleft {
+  height: 100vh;
+  width: 600px;
+  padding-top: 150px;
+}
+.hero .heroleft h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.hero .heroleft h2:nth-child(1) {
+  color: var(--color1);
+}
+.hero .heroleft h2:nth-child(2) {
+  color: var(--color2);
+}
+.hero .heroleft h1 {
+  font-size: 60px;
+  text-transform: uppercase;
+}
+.hero .heroleft #cyber1 {
+  color: var(--color1);
+}
+.hero .heroleft #cyber2 {
+  color: var(--color1);
+  padding-left: 100px;
+}
+.hero .heroleft p {
+  text-align: justify;
+  color: black;
+  font-weight: 500;
+}
+.hero .heroleft button {
+  font-size: 20px;
+  padding: 10px 25px;
+  margin-top: 20px;
+  color: var(--color5);
+  background-color: var(--color1);
+  border: 0;
+  outline: 0;
+  text-transform: capitalize;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.4s transform ease-in-out;
+}
+.hero .heroleft button:hover {
+  transform: scale(1.1);
+}
+.hero .heroright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  height: 100vh;
+}
+.hero .heroright .image {
+  background: url(./images/hero.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  background-color: var(--color1);
+  height: 400px;
+  width: 400px;
+}
+.hero .heroright .social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.hero .heroright .social-links i {
+  font-size: 30px;
+}
+.hero .heroright .social-links i:hover {
+  color: var(--color1);
+  cursor: pointer;
+}
+.project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+  padding-top: 70px;
+  background-color: var(--color1);
+}
+.project .heading {
+  display: flex;
+  align-items: center;
+  height: 20vh;
+}
+.project .heading h1 {
+  color: var(--color5);
+  text-transform: uppercase;
+  font-size: 60px;
+}
+.project .card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 80vh;
+}
+.project .card-container .card {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 60vh;
+  width: 350px;
+  padding: 20px;
+  flex-direction: column;
+  background-color: var(--color5);
+  border-radius: 20px;
+  transition: 0.4s transform ease-in-out;
+}
+.project .card-container .card:hover {
+  transform: translateY(-50px);
+}
+.project .card-container .card img {
+  width: 300px;
+}
+.project .card-container .card button {
+  font-size: 10px;
+  padding: 10px 25px;
+  margin-top: 20px;
+  color: var(--color5);
+  background-color: var(--color1);
+  border: 0;
+  outline: 0;
+  text-transform: capitalize;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.4s transform ease-in-out;
+}
+.project .card-container .card button:hover {
+  transform: scale(1.1);
+}
+.contact {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.contact .heading{
+  display: flex;
+  align-items: center;
+  height: 20vh;
+} 
+
+.contact .form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.contact .form .map
+{
+  margin: 0 20px;
+  
+}
+.contact .form .map iframe{
+  border-radius: 20px;
+}
+
+.contact .form .contactform .name{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 400px;
+  width: 450px;
+  border-radius: 20px;
+  gap: 20px;
+}
+
+.contact .form .contactform #firstname{
+  border: none;
+  outline: 0;
+  width: 350px;
+  height: 30px;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: var(--color4);
+}
+
+.contact .form .contactform #lastname{
+  border: none;
+  outline: 0;
+  width: 350px;
+  height: 30px;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: var(--color4);
+}
+
+.contact .form .contactform #email{
+  border: none;
+  outline: 0;
+  width: 350px;
+  height: 30px;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: var(--color4);
+}
+
+.contact .form .contactform #phone{
+  border: none;
+  outline: 0;
+  width: 350px;
+  height: 30px;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: var(--color4);
+}
+
+.contact .form .contactform #message{
+  border: none;
+  outline: 0;
+  height: 80px;
+  width: 350px;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: var(--color4);
+}
+
+.contact .form .contactform .button{
+  font-size: 12px;
+  padding: 10px 25px;
+  margin-top: 20px;
+  background-color: var(--color1);
+  font-weight: 20px;
+  border: 0;
+  outline: 0;
+  text-transform: capitalize;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.4s transform ease-in-out;
+}
